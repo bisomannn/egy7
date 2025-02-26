@@ -227,12 +227,7 @@
 
     <!-- أزرار التحكم في العرض -->
     <div id="view-buttons">
-        <button id="front-view">واجهة أمامية</button>
-        <button id="back-view">واجهة خلفية</button>
-        <button id="right-view">جانب أيمن</button>
-        <button id="left-view">جانب أيسر</button>
-        <button id="top-view">من الأعلى</button>
-        <button id="bottom-view">من الأسفل</button>
+      
     </div>
 
     <!-- رسالة تحميل -->
@@ -446,12 +441,7 @@
         // 9. إضافة أزرار التحكم في العرض
         const setupViewButtons = () => {
             const views = {
-                "front-view": { position: [0, 0, 50], lookAt: [0, 0, 0] }, // واجهة أمامية
-                "back-view": { position: [0, 0, -50], lookAt: [0, 0, 0] }, // واجهة خلفية
-                "right-view": { position: [50, 0, 0], lookAt: [0, 0, 0] }, // جانب أيمن
-                "left-view": { position: [-50, 0, 0], lookAt: [0, 0, 0] }, // جانب أيسر
-                "top-view": { position: [0, 50, 0], lookAt: [0, 0, 0] }, // من الأعلى
-                "bottom-view": { position: [0, -50, 0], lookAt: [0, 0, 0] }, // من الأسفل
+
             };
 
             for (const [id, view] of Object.entries(views)) {
