@@ -322,10 +322,10 @@
         // 3. تحميل النماذج وإضافتها إلى المشهد
         const initModels = async () => {
             try {
-                const model1 = await loadModel('./assets/heightmap1.jpg', 195, 390, 0.25);
-                const model2 = await loadModel('./assets/heightmap2.jpg', 195, 300, 0.25);
-                const model3 = await loadModel('./assets/heightmap3.jpg', 195, 300, 0.25);
-                const model4 = await loadModel('./assets/heightmap4.jpg', 195, 300, 0.25);
+                const model1 = await loadModel('./assets/heightmap1.jpg', 195, 390, 0.325);
+                const model2 = await loadModel('./assets/heightmap2.jpg', 195, 390, 0.325);
+                const model3 = await loadModel('./assets/heightmap3.jpg', 195, 390, 0.325);
+                const model4 = await loadModel('./assets/heightmap4.jpg', 195, 390, 0.325);
 
                 models.push(model1, model2, model3, model4);
                 scene.add(models[currentModelIndex]);
