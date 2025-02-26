@@ -270,10 +270,10 @@
 
         // معلومات كل نموذج
         const modelData = [
-            { code: "PLT 01", depth: "2 mm", kind: "UP", size: "120x60", customer: "platino ceramic" },
-            { code: "PLT 02", depth: "3 mm", kind: "UP", size: "120x60", customer: "platino ceramic" },
-            { code: "PLT 03", depth: "4 mm", kind: "UP", size: "120x60", customer: "platino ceramic" },
-            { code: "PLT 04", depth: "4 mm", kind: "UP", size: "120x60", customer: "platino ceramic" }
+            { code: "PLT 01", depth: "1 mm", kind: "UP", size: "120x60", customer: "platino ceramic" },
+            { code: "PLT 02", depth: "1 mm", kind: "UP", size: "120x60", customer: "platino ceramic" },
+            { code: "PLT 03", depth: "1 mm", kind: "UP", size: "120x60", customer: "platino ceramic" },
+            { code: "PLT 04", depth: "1 mm", kind: "UP", size: "120x60", customer: "platino ceramic" }
         ];
 
         // 2. تحميل النماذج
@@ -322,10 +322,10 @@
         // 3. تحميل النماذج وإضافتها إلى المشهد
         const initModels = async () => {
             try {
-                const model1 = await loadModel('./assets/heightmap1.jpg', 300, 600, 0.5);
-                const model2 = await loadModel('./assets/heightmap2.jpg', 300, 600, 0.5);
-                const model3 = await loadModel('./assets/heightmap3.jpg', 300, 600, 0.5);
-                const model4 = await loadModel('./assets/heightmap4.jpg', 300, 600, 0.5);
+                const model1 = await loadModel('./assets/heightmap1.jpg', 195, 390, 0.25);
+                const model2 = await loadModel('./assets/heightmap2.jpg', 195, 300, 0.25);
+                const model3 = await loadModel('./assets/heightmap3.jpg', 195, 300, 0.25);
+                const model4 = await loadModel('./assets/heightmap4.jpg', 195, 300, 0.25);
 
                 models.push(model1, model2, model3, model4);
                 scene.add(models[currentModelIndex]);
